@@ -1,1 +1,75 @@
-index.html file
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My GitHub Project</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: #f9fafc;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    header {
+      background: #24292f;
+      color: white;
+      padding: 1.5rem 0;
+    }
+
+    main {
+      padding: 2rem;
+    }
+
+    h1 {
+      color: #0366d6;
+    }
+
+    a {
+      color: #0366d6;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      margin-top: 3rem;
+      padding: 1rem 0;
+      font-size: 0.9rem;
+      color: #666;
+      border-top: 1px solid #e1e4e8;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to My GitHub Repository</h1>
+  </header>
+
+  <main>
+    <p>This page is hosted using <strong>GitHub Pages</strong>.</p>
+    <p>
+      Check out the project on GitHub:
+      <a href="https://github.com/nivedhitha-mitta/AXI3.0_Master_UVC" target="_blank">
+        github.com/yourusername/your-repo-name
+      </a>
+    </p>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Nivedhitha Mitta</p>
+  </footer>
+
+  <script>
+    // Automatically update the year
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
