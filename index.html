@@ -3,72 +3,158 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My GitHub Project</title>
+  <title>Nivedhitha Mitta </title>
   <link rel="stylesheet" href="style.css" />
   <style>
-    body {
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      background: #f9fafc;
-      color: #333;
+    :root {
+      --primary: #0366d6;
+      --bg: #f9fafc;
+      --text: #2d2d2d;
+      --light: #6c757d;
+    }
+
+    * {
       margin: 0;
       padding: 0;
-      text-align: center;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+      background: var(--bg);
+      color: var(--text);
     }
 
     header {
-      background: #24292f;
+      background: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h1 {
+      color: var(--primary);
+      font-size: 1.5rem;
+    }
+
+    nav a {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: var(--primary);
+    }
+
+    section {
+      padding: 5rem 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    #hero {
+      background: linear-gradient(to right, #0366d6, #004aad);
       color: white;
-      padding: 1.5rem 0;
+      padding: 7rem 2rem;
     }
 
-    main {
-      padding: 2rem;
+    #hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
     }
 
-    h1 {
-      color: #0366d6;
+    #hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
     }
 
-    a {
-      color: #0366d6;
+    #hero a {
+      background: white;
+      color: var(--primary);
+      padding: 0.75rem 1.5rem;
+      border-radius: 5px;
       text-decoration: none;
       font-weight: 600;
+      transition: all 0.3s;
     }
 
-    a:hover {
-      text-decoration: underline;
+    #hero a:hover {
+      background: #e1e4e8;
+    }
+
+    #about img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+    }
+
+    #projects .project {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      margin: 1rem 0;
+      padding: 2rem;
+      text-align: left;
+    }
+
+    #projects h3 {
+      color: var(--primary);
+      margin-bottom: 0.5rem;
     }
 
     footer {
-      margin-top: 3rem;
-      padding: 1rem 0;
-      font-size: 0.9rem;
-      color: #666;
+      text-align: center;
+      padding: 2rem;
+      background: white;
+      color: var(--light);
       border-top: 1px solid #e1e4e8;
+    }
+
+    footer a {
+      color: var(--primary);
+      text-decoration: none;
+      margin: 0 0.5rem;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Welcome to My GitHub Repository</h1>
+    <h1>Nivedhitha Mitta</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+    </nav>
   </header>
 
-  <main>
-    <p>This page is hosted using <strong>GitHub Pages</strong>.</p>
-    <p>
-      Check out the project on GitHub:
-      <a href="https://github.com/nivedhitha-mitta/AXI3.0_Master_UVC" target="_blank">
-        github.com/nivedhitha-mitta/axi3.0_master_uvc
-      </a>
-    </p>
-  </main>
+  <section id="hero">
+    <h2>Hi, I'm Nivedhitha Mitta 👋</h2>
+    <p>A passionate design verification engineer.</p>
+    <a href="#projects">View My Work</a>
+  </section>
 
-  <footer>
-    <p>© <span id="year"></span> Nivedhitha Mitta</p>
-  </footer>
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>🌐 Project One</h3>
+      <p>A simple AXI3.0 master UVC.</p>
+      <a href="https://github.com/nivedhitha-mitta/AXI3.0_Master_UVC" target="_blank">View on GitHub →</a>
+    </div>
 
   <script>
-    // Automatically update the year
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 </body>
