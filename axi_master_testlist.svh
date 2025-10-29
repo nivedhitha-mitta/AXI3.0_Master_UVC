@@ -1,0 +1,22 @@
+
+
+
+`include "axi_master_base_test.sv"
+  //`include "axi_master_wr_rd_test.sv"
+`include "axi_master_pipelined_writes_test.sv"
+`include "axi_master_pipelined_reads_test.sv"
+`include "axi_pipelined_write_read_test.sv"
+`include "axi_incr_aligned_len_size_sweep_test.sv"
+`include "axi_incr_unaligned_addr_wr_rd_access_test.sv"
+`include "axi_fixed_aligned_addr_wr_rd_access_test.sv"
+`include "axi_fixed_unaligned_addr_wr_rd_access_test.sv"
+`include "axi_wrap_transfers_test.sv"
+`include "axi_axcache_signals_test.sv"
+`include "axi_axprot_signals_test.sv"
+`include "axi_axlock_signals_test.sv"
+`include "axi_master_exclusive_access_test.sv"
+`include "axi_bready_rready_delayed_test.sv"
+`include "axi_wstrb_override_test.sv"
+`include "axi_incr_fixed_wrap_transfers_test.sv"
+`include "axi_excess_writes_limited_reads_test.sv"
+`include "axi_wrap_transfers_scbd_test.sv"
