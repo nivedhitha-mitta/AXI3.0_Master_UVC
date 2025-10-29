@@ -15,6 +15,7 @@ Limitations:
 1. Doesn't support same(write-write/read-read) pipeline transfers for same awid/arid
 2. Coverage and assertions are to be implemented yet.
 3. Design doesn't support wrap transfers. But, UVC supports wrap transfers and has been verified.
+4. Assertions and Coverage would be added in next versions.
 
 **Design file reference:**
 Copyright (c) 2018 Alex Forencich from github
